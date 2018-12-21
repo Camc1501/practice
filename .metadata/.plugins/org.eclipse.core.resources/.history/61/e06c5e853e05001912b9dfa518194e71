@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ejercicio de Formulario Servlet</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script type="text/javascript" src="functions.js"></script>
+</head>
+<body>
+		<form name="form1" action="/Servlet" 
+			method="post" onsubmit="return validateForm(this);">
+			<input type="hidden" name="hidden" value="hiddenValue">
+			<table width="200" id="one-column-enphasis">
+				<caption>Formulario de Registro</caption>
+				<tr>
+					<td class="oce-first"> User(*)</td>
+					<td>
+						<input class="default" type="text" name="user"
+						value="Nombre de Usuario" onfocus="this.select();">
+					</td>
+				</tr>
+				<tr>
+					<td class="oce-first"> Password(*)</td>
+					<td>
+						<input class="default" type="password" name="pass"
+						onfocus="this.select();">
+					</td>
+				</tr>
+				<tr>
+					<td class="oce-first">Tecnologías de Interes (*)</td>
+					<td>
+						Java <input type="checkbox" name="tech" value="java">
+						&nbsp;&nbsp;&nbsp;
+						.Net <input type="checkbox" name="tech" value="net">
+						&nbsp;&nbsp;&nbsp;
+						PHP <input type="checkbox" name="tech" value="php">
+					</td>
+				</tr>
+				<tr>
+					<td class="oce-first">Género (*)</td>
+					<td>
+						M<input type="radio" name="gender" value="M">
+						&nbsp;&nbsp;&nbsp;
+						F<input type="radio" name="gender" value="F">
+					</td>
+				</tr>
+				<tr>
+					<td class="oce-first">Ocupación (*)</td>
+					<td>
+						<select name="occupation" class="default">
+							<option value="">Select</option>
+							<option value="1">Profesor</option>
+							<option value="2">Ingeniero</option>
+							<option value="3">Doctor</option>
+							<option value="4">Abogado</option>
+							<option value="5">Otro</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="oce-first"> Música Favorita</td>
+					<td>
+						<select name="music" multiple class="default">
+							<option value="Rock">Rock</option>
+							<option value="Pop">Pop</option>
+							<option value="Salsa">Salsa</option>
+							<option value="tropical">Tropical</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="oce-first">Comentarios:</td>
+					<td>
+						<textarea name="coments" rows="2" cols="30"
+								  class="default" onfocus="this.select();">
+						Escribe un texto
+						</textarea>
+					</td>
+				</tr>
+				<tr style="text-align:center;">
+					<td>
+						<input type="reset" value="Clean" class="default">
+					</td>
+					<td>
+						<input type="submit" value="Enviar" class="default">
+					</td>
+				</tr>
+			</table>
+		</form>
+</body>
+</html>

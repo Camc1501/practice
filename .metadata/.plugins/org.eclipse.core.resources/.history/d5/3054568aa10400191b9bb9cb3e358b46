@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Form</title>
+</head>
+<body>
+	<h1>Servlet From</h1>
+	<form name="form1" action="/HandlingParametersServlets/Sevlet"
+		method="post">
+		User:<input type="text" name="user" /> <br> Password: <input
+			type="password" name="pass" value="" /> <br> <input
+			type="submit" value="OK ;)" />
+	</form>
+</body>
+</html>

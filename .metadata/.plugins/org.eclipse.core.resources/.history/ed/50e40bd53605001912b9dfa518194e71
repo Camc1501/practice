@@ -1,0 +1,29 @@
+/**
+ * Funcion para validar los elementos requeridos (*)
+ * @param (Object) form
+ */
+function validateForm(form){
+	//validar usuario
+	var user = form.user;
+	if (user.value == "" || user.value == "Escribir el usuario"){
+		alert("Debe ingresar un usuario");
+		user.focus();
+		user.select();
+		return false;
+	}
+	
+	//validar password
+	var pass = form.pass;
+	if(pass.value == "" || pass.value.length<3){
+		alert("debe ingresar una contraseña de más de 3 caracteres");
+		pass.focus();
+		pass.select();
+		return false;
+	}
+	
+	//validar Tecnologias
+	var tech = form.tech;
+	var selectedCheck = flase;
+	
+	
+}

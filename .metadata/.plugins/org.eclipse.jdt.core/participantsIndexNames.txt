@@ -1,0 +1,9 @@
+INDEX VERSION 1.131
+C:\Users\USUARIO\Documents\Camilo\JEE Projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2317031430.index
+\HelloWorld\src
+C:\Users\USUARIO\Documents\Camilo\JEE Projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2380175872.index
+\HelloWorld\src
+C:\Users\USUARIO\Documents\Camilo\JEE Projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3115327477.index
+\HelloWorld\src
+C:\Users\USUARIO\Documents\Camilo\JEE Projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2830615768.index
+\HelloWorld\src

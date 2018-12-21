@@ -1,0 +1,65 @@
+/**
+ * Funcion para validar los elementos requeridos (*)
+ * @param (Object) form
+ */
+function validateForm(form){
+	//validar usuario
+	var user = form.user;
+	if (user.value == "" || user.value == "Nombre"){
+		alert("Debe ingresar un usuario");
+		user.focus();
+		user.select();
+		return false;
+	}
+	
+	//validar password
+	var pass = form.pass;
+	if(pass.value == "" || pass.value.length<3){
+		alert("debe ingresar una contraseña de más de 3 caracteres");
+		pass.focus();
+		pass.select();
+		return false;
+	}
+	
+	//validar Tecnologias
+	var tech = form.tech;
+	var selectedCheck = false;
+	//verificar si un checkbox está selecionado
+	for(i = 0; i < tech.length; i++){
+		if(tech[i].checked){
+			selectedCheck = true;
+			break;
+		}
+	}
+	if(!selectedCheck){
+		alert("Debe seleccionar una tecnología");
+		return false;
+	}
+	
+	//Validando el genero
+	var genders = form.gender;
+	var selectedRadio = false;
+	
+	//validar si un check button está seleccionado
+	for(i=0; i < genders.length; i++){
+		if(genders[i].checked){
+			selectedRadio = true;
+			break;
+		}
+	}
+	if(!selectedRadio){
+		alert("Debe seleccionar un género");
+		return false;
+	}
+	
+	//validar la ocupacion
+	var occupation = form.occupation;
+	if(occupation.value = " "){
+		alert("debe ingresar una ocupación");
+		return false;
+	}
+	
+	//validar formualrio
+	alert("Fomulario completo, enviando información al servidor...");
+	return true;
+}
